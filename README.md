@@ -85,6 +85,10 @@ dotnet run delete 1
 
 The command above the task with the ID **1** from the database.
 
+### Example Application
+
+You can find an [example version](https://github.com/kvngdre/tasks-cli-app/releases/tag/v1.0.0) of this tasks app on the releases tab of this repo.
+
 ## Extra Features
 
 - Change the IsComplete property of the Task data model to use a timestamp instead, which gives further information.
