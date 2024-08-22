@@ -1,9 +1,11 @@
 namespace TasksApp.Models;
 
-public class Task
+public class Task(string title)
 {
-    public string Title { get; set; } = null!;
-    public string Description { get; set; } = null!;
+    public int Id { get; set; }
+    public string Title { get; set; } = title;
+    public bool IsCompleted { get; set; }
     public DateOnly? DueDate { get; set; } = null;
     public TimeOnly? DueTime { get; set; } = null;
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
 }
