@@ -26,7 +26,7 @@ public class ListTasksCommand : Command
             db.Tasks.ToList() :
             db.Tasks.Where(t => t.IsCompleted == false).ToList();
 
-        ConsoleTable table = isPresent ? new("Id", "Title", "Created", "Done") : new("Id", "Title", "Created");
+        ConsoleTable table = isPresent ? new("Id", "Title", "Created", "Completed") : new("Id", "Title", "Created");
 
         foreach (var task in tasks)
         {
